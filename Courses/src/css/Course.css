@@ -1,0 +1,123 @@
+.card {
+    position: relative;
+    width: 300px;
+    height: 400px;
+  }
+  
+  .image-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+  }
+  
+  .content-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+  
+  .card:hover .content-container {
+    opacity: 1;
+  }
+  
+  .card-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  
+  .cards-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  .card {
+    width: 300px;
+    height: 400px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    overflow: hidden;
+    display: inline-block; 
+    margin-top: 40px;
+    margin-right: 20px;
+    margin-inline-start: 2%;
+  }
+  
+  .card-content {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .image-container {
+    text-align: center;
+    overflow: hidden;
+  }
+  
+  .image-container img {
+    display: block;
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+  }
+
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Siyah yarı saydam bir arka plan oluşturur */
+    opacity: 0; /* Başlangıçta görünmez */
+    transition: opacity 0.3s ease; /* Opaklık değişimini yumuşatır */
+  }
+
+  .card:hover .overlay {
+    opacity: 1; /* Fare kartın üzerine geldiğinde overlay'i görünür hale getirir */
+  }
+
+  .content-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff; /* Beyaz renkli yazılar */
+    opacity: 0; /* Başlangıçta görünmez */
+  }
+  
+  .card:hover .content-container {
+    opacity: 1; /* Fare kartın üzerine geldiğinde içeriği görünür hale getirir */
+  }
+  
+  .course-details {
+    padding: 20px;
+  }
+  
+  .course-details h2 {
+    font-size: 28px;
+  }
+  
+  .course-details h3 {
+    font-size: 14px;
+    color: rgb(203, 202, 202);
+  }
+  .course-details p {
+    font-size: 18px;
+  }
+  
